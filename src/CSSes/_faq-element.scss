@@ -1,0 +1,13 @@
+#faq {
+  .active {
+    h2 {
+      @apply font-black text-[--very-dark-desaturated-blue];
+    }
+    img {
+      rotate: 180deg;
+    }
+    p {
+      @apply max-h-full scale-100;
+    }
+  }
+}

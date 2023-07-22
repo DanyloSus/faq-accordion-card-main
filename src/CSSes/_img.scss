@@ -1,0 +1,31 @@
+#cube {
+  animation: cube-anim 5s ease-in-out infinite;
+}
+
+@keyframes cube-anim {
+  0% {
+    top: 35%;
+  }
+  50% {
+    top: 30%;
+  }
+  100% {
+    top: 35%;
+  }
+}
+
+#laptop {
+  animation: lapt-anim 5s ease-in-out infinite;
+}
+
+@keyframes lapt-anim {
+  0% {
+    top: 20%;
+  }
+  50% {
+    top: 15%;
+  }
+  100% {
+    top: 20%;
+  }
+}

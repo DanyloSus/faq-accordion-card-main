@@ -9,6 +9,8 @@
   --soft-violet: hsl(273, 75%, 66%);
   --soft-blue: hsl(240, 73%, 65%);
   --light-grayish-blue: hsl(240, 5%, 91%);
+  --width: 100% / 12% * 7.5%;
+  --height: 100% / 12% * 8%;
   font-family: "Kumbh Sans", sans-serif;
   color: var(--dark-grayish-blue);
 }
@@ -17,4 +19,54 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+hr {
+  background-color: var(--light-grayish-blue);
+}
+
+section {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+#cube {
+  animation: cube-anim 5s ease-in-out infinite;
+}
+
+@keyframes cube-anim {
+  0% {
+    top: 35%;
+  }
+  50% {
+    top: 30%;
+  }
+  100% {
+    top: 35%;
+  }
+}
+#laptop {
+  animation: lapt-anim 5s ease-in-out infinite;
+}
+
+@keyframes lapt-anim {
+  0% {
+    top: 20%;
+  }
+  50% {
+    top: 15%;
+  }
+  100% {
+    top: 20%;
+  }
+}
+#faq .active h2 {
+  @apply font-black text-[--very-dark-desaturated-blue];
+}
+#faq .active img {
+  rotate: 180deg;
+}
+#faq .active p {
+  @apply max-h-full scale-100;
 }/*# sourceMappingURL=index.css.map */
