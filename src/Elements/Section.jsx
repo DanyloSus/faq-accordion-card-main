@@ -3,11 +3,14 @@ import FAQElement from "./FAQElement";
 
 function Section() {
   return (
-    <section id="faq" className=" flex flex-col pt-12 pb-20 pr-24">
-      <h1 className=" text-4xl font-black text-[--very-dark-desaturated-blue] mb-10">
+    <section
+      id="faq"
+      className=" flex flex-col lg:pt-12 lg:pb-20 lg:pr-24 w-full lg:w-auto px-5 pb-14 pt-[20%]"
+    >
+      <h1 className=" text-4xl font-black text-[--very-dark-desaturated-blue] my-7 mx-auto">
         FAQ
       </h1>
-      <div className="flex flex-col items-stretch justify-between h-full overflow-y-auto overflow-x-hidden">
+      <div className="flex flex-col lg:items-stretch justify-between h-full overflow-y-auto overflow-x-hidden items-center">
         <FAQElement h="How many team members can I invite?" p="0" />
         <FAQElement
           h="What is the maximum file upload size?"

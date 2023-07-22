@@ -8,9 +8,9 @@ function FAQElement({ h, p }) {
   };
 
   return (
-    <div id="faq-div" ref={divRef}>
+    <div id="faq-div" ref={divRef} className="w-full">
       <h2
-        className="flex items-center justify-between ease-in-out duration-1000 text-[--dark-grayish-blue] font-light cursor-pointer"
+        className="flex items-center justify-between ease-in-out duration-1000 text-[--dark-grayish-blue] font-light cursor-pointer text-xs lg:text-base"
         onClick={() => toggleClass(divRef)}
       >
         {h}
@@ -21,8 +21,10 @@ function FAQElement({ h, p }) {
           onClick={() => toggleClass(divRef)}
         />
       </h2>
-      <p className="ease-in-out duration-1000 max-h-0 scale-0 mb-3">{p}</p>
-      <hr />
+      <p className="ease-in-out duration-1000 max-h-0 scale-0 mb-3 text-[12px] lg:text-base mt-2">
+        {p}
+      </p>
+      <hr className="mb-4" />
     </div>
   );
 }

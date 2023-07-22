@@ -29,3 +29,19 @@
     top: 20%;
   }
 }
+
+#laptop-mobile {
+  animation: lapt-m-anim 5s ease-in-out infinite;
+}
+
+@keyframes lapt-m-anim {
+  0% {
+    top: -5rem;
+  }
+  50% {
+    top: -7rem;
+  }
+  100% {
+    top: -5rem;
+  }
+}
